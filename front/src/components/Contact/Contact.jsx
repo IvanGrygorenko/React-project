@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./Contact.scss";
-import { FacebookOutlined } from "@mui/icons-material";
 import { Instagram } from "@mui/icons-material";
 import { Twitter } from "@mui/icons-material";
 import { Google } from "@mui/icons-material";
+import { FacebookOutlined } from "@mui/icons-material";
 
 export default function Contact() {
     const [emailText, setEmailText] = useState('');
@@ -14,6 +14,7 @@ export default function Contact() {
         const mailtoUrl = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
         window.location.href = mailtoUrl;
     };
+
 
     return (
         <div className="contact">
