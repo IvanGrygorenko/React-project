@@ -1,0 +1,117 @@
+.navbar {
+    height: 80px;
+    border-bottom: 0.5px solid green;
+
+    .logo {
+        max-width: 50px;
+    }
+
+    .wrapper {
+        padding: 10px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .left {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .center {
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .icons {
+        display: flex;
+        gap: 15px;
+        color: #777;
+        cursor: pointer;
+
+        .cartIcon {
+            position: relative;
+
+            span {
+                font-size: 12px;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: green;
+                color: #fff;
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .fav__icons {
+            position: relative;
+
+            span {
+                font-size: 12px;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: red;
+                color: #fff;
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+    }
+
+    .custom-select {
+        display: block;
+        width: 100%;
+        height: 40px;
+        padding: 0.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+    .select-arrow {
+        position: absolute;
+        top: 50%;
+        right: 0.75rem;
+        transform: translateY(-50%);
+    }
+
+    .custom-select:focus {
+        border-color: #80bdff;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    .link-logo {
+        padding-right: 180px;
+    }
+}
